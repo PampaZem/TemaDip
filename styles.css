@@ -1,0 +1,55 @@
+/* styles.css */
+body {
+    margin: 10px;
+    background-image: url('fon.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+}
+
+div {
+    border: solid 1px #000000;
+    padding: 10px;
+}
+
+.top {
+    height: 100px;
+    width: 100%;
+    background-color: rgba(51, 51, 51, 0.7);
+    background-image: url('fon.jpg');
+    text-align: center;
+    line-height: 100px;
+}
+
+.left {
+    width: 200px;
+    float: left;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.right {
+    width: 200px;
+    float: right;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+/* Медиазапрос для экрана (screen) */
+@media screen 
+{
+    body {
+        font-family: 'Courier New', Courier, monospace; 
+    }
+}
+
+/* Медиазапрос для печати (print) */
+@media print {
+    body {
+        background-color: white; 
+    }
+}
+
+/* Медиазапрос для устройств сенсорного управления (handheld) */
+
+
