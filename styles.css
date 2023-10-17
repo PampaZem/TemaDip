@@ -71,7 +71,7 @@ div {
         background: none; /* Убираем фон у блока top */
         line-height: normal; /* Восстанавливаем обычный line-height */
     }
-    .mobile-links {
+   .mobile-links {
         width: 100%; 
         height: auto;
         text-align: center;
@@ -81,6 +81,7 @@ div {
         display: block;
         margin: 10px 0; /* Добавляем отступы между ссылками */
     }
+
 }
 
  
