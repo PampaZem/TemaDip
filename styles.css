@@ -72,9 +72,14 @@ div {
         line-height: normal; /* Восстанавливаем обычный line-height */
     }
     .mobile-links {
+        width: 100%; 
         height: auto;
+        text-align: center;
+        display: block; 
+    }
+   .mobile-links a {
         display: block;
-        text-align: center; /* Центрируем ссылки внутри блока */
+        margin: 10px 0; /* Добавляем отступы между ссылками */
     }
 }
 
