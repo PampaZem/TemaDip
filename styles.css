@@ -1,14 +1,13 @@
-/* styles.css */
 body {
     margin: 10px;
     background-image: url('fon.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    color: #fff;
+    color: #fff; /* Устанавливаем цвет текста в белый */
 }
 
 div {
-    border: solid 1px #000000;
+    border: solid 1px #000000; /* Устанавливаем цвет границы в белый */
     padding: 10px;
 }
 
@@ -27,7 +26,6 @@ div {
     margin-top: 10px;
     margin-right: 10px;
 }
-
 .right {
     width: 200px;
     float: right;
@@ -35,21 +33,39 @@ div {
     margin-right: 10px;
 }
 
+.main {
+    margin-left: 220px;
+    margin-top: 10px;
+}
+.centered-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 20px; /* Добавьте отступ между изображением и текстом */
+}
+.main img {
+   max-width: 100%; /* Чтобы изображения не выходили за пределы контейнера */
+}
+@media screen and (max-width: 600px) {
+    .left, .right {
+        width: 100%;
+        float: none;
+        margin: 10px 0;
+    }
+}
+
+
 /* Медиазапрос для экрана (screen) */
-@media screen 
-{
+@media screen {
     body {
-        font-family: 'Courier New', Courier, monospace; 
+        font-family: 'Courier New', Courier, monospace;
     }
 }
 
 /* Медиазапрос для печати (print) */
 @media print {
     body {
-        background-color: white; 
+        background-color: white;
     }
 }
-
-/* Медиазапрос для устройств сенсорного управления (handheld) */
-
-
