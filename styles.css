@@ -49,6 +49,11 @@ div {
 .mobile-links {
     display: none; /* Скрываем мобильные гиперссылки на десктопных устройствах */
 }
+@media print {
+    body {
+        background-color: white; 
+    }
+}
 /* CSS для мобильных устройств */
 @media screen and (max-width: 600px) {
     body {
@@ -83,6 +88,7 @@ div {
     }
 
 }
+
 
  
 
