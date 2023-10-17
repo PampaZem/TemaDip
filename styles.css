@@ -33,7 +33,7 @@ div {
     margin-right: 10px;
 }
 .main {
-    margin-left: 220px;
+    margin-left: 200px;
     margin-top: 10px;
 }
 .centered-container {
@@ -50,10 +50,19 @@ div {
     display: none; /* Скрываем мобильные гиперссылки на десктопных устройствах */
 }
 @media print {
-    body {
-        background-color: white; 
+    .top {
+        height: 100px;
+    }
+    .left {
+       width: 100%;
+        float: none;
+        margin: 0;
+    }
+    .main {
+        margin-left: 0;
     }
 }
+
 /* CSS для мобильных устройств */
 @media screen and (max-width: 600px) {
     body {
@@ -86,8 +95,8 @@ div {
         display: block;
         margin: 10px 0; /* Добавляем отступы между ссылками */
     }
-
 }
+
 
 
  
