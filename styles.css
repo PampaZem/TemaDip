@@ -32,7 +32,6 @@ div {
     margin-top: 10px;
     margin-right: 10px;
 }
-
 .main {
     margin-left: 220px;
     margin-top: 10px;
@@ -46,6 +45,9 @@ div {
 }
 .main img {
    max-width: 100%; /* Чтобы изображения не выходили за пределы контейнера */
+}
+.mobile-links {
+    display: none; /* Скрываем мобильные гиперссылки на десктопных устройствах */
 }
 /* CSS для мобильных устройств */
 @media screen and (max-width: 600px) {
@@ -69,13 +71,10 @@ div {
         background: none; /* Убираем фон у блока top */
         line-height: normal; /* Восстанавливаем обычный line-height */
     }
-}
-
-
-
-/* Медиазапрос для печати (print) */
-@media print {
-    body {
-        background-color: white;
+    .mobile-links {
+        display: block;
     }
 }
+
+ 
+
