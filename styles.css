@@ -73,7 +73,6 @@ div {
     }
     .mobile-links {
         height: auto;
-        margin-bottom: 10px;
         display: block;
         text-align: center; /* Центрируем ссылки внутри блока */
     }
