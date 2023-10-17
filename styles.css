@@ -55,7 +55,7 @@ div {
     }
 }
 /* CSS для мобильных устройств */
-@media screen Handler (max-width: 600px) {
+@media screen and (max-width: 600px) {
     body {
         color: #fff; /* Цвет текста на белом фоне */
     }
