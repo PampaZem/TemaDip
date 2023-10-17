@@ -47,21 +47,24 @@ div {
 .main img {
    max-width: 100%; /* Чтобы изображения не выходили за пределы контейнера */
 }
+/* CSS для мобильных устройств */
 @media screen and (max-width: 600px) {
-    .left, .right {
-        width: 100%;
-        float: none;
-        margin: 10px 0;
-    }
-}
-
-
-/* Медиазапрос для экрана (screen) */
-@media screen {
     body {
-        font-family: 'Courier New', Courier, monospace;
+        background-image: none; /* Убираем фоновое изображение на мобильных устройствах */
+    }
+
+    .left,
+    .right {
+        width: 100%; /* Ширина блоков left и right на мобильных устройствах */
+        float: none;
+        margin-right: 0;
+    }
+
+    .main {
+        margin-left: 10px; /* Добавляем отступ слева на мобильных устройствах */
     }
 }
+
 
 /* Медиазапрос для печати (print) */
 @media print {
