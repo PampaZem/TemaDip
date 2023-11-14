@@ -2,27 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Add viewport meta tag for responsiveness -->
     <title>Капча</title>
-    <style>
-        body {
-            user-select: none;
-            background-image: url('caphacat.jpg'); /* 
-            background-size: cover; /* Растягивает фон, чтобы заполнить весь экран */
-            background-position: center; /* Выравнивание фона по центру */
-            background-repeat: no-repeat; /* Запрет повторения фона */
-            color: white; /* Цвет текста для лучшей видимости на фоне */
-        }
-
-        #captcha-container {
-            /* Добавьте стили для контейнера с капчей, чтобы он был читаемым на фоне */
-            padding: 20px;
-            background-color: rgba(0, 0, 0, 0.5); /* Прозрачный цвет фона для лучшей видимости текста */
-            border-radius: 10px;
-            margin: 50px;
-        }
-
-        /* Добавьте другие стили, как вам нужно */
-    </style>
+    <link rel="stylesheet" href="captcha.css"> <!-- Link to the external CSS file -->
 </head>
 <body>
     <div id="captcha-container">
