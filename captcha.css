@@ -1,0 +1,22 @@
+body {
+    user-select: none;
+    background-image: url('caphacat.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+#captcha-container {
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    margin: 50px;
+}
+
+/* Add other styles as needed */
+
+@media screen and (max-width: 600px) {
+    #captcha-container {
+        margin: 20px;
+    }
+}
