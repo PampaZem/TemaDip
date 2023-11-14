@@ -3,7 +3,7 @@ body {
     background-image: url('fon.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    color: #fff; /* Устанавливаем цвет текста в белый */
+    color: #fff;
 }
 
 div {
@@ -18,6 +18,7 @@ div {
     background-image: url('fon.jpg');
     text-align: center;
     line-height: 100px;
+    clear: both; /* Clear the float property */
 }
 
 .left {
@@ -26,77 +27,88 @@ div {
     margin-top: 10px;
     margin-right: 10px;
 }
+
 .right {
     width: 200px;
     float: right;
     margin-top: 10px;
     margin-right: 10px;
 }
+
 .main {
-    margin-left: 200px;
     margin-top: 10px;
+    overflow: hidden; /* Clear floats within the main container */
 }
+
 .centered-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  margin-bottom: 20px; /* Добавьте отступ между изображением и текстом */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
 }
+
 .main img {
-   max-width: 100%; /* Чтобы изображения не выходили за пределы контейнера */
+    max-width: 100%;
 }
+
 .mobile-links {
-    display: none; /* Скрываем мобильные гиперссылки на десктопных устройствах */
+    display: none;
 }
+
 @media print {
     .top {
         height: 100px;
     }
+
     .left {
-       width: 100%;
+        width: 100%;
         float: none;
         margin: 0;
     }
+
     .main {
         margin-left: 0;
     }
 }
 
-/* CSS для мобильных устройств */
 @media screen and (max-width: 600px) {
     body {
-        color: #fff; /* Цвет текста на белом фоне */
+        color: #fff;
     }
 
-    .left, .right, .main {
-        width: 100%; /* Ширина блоков left, right и main на мобильных устройствах */
+    .left,
+    .right,
+    .main {
+        width: 100%;
         float: none;
-        margin: 0; /* Убираем отступы */
+        margin: 0;
     }
 
     .centered-container {
-        display: block; /* Переключаемся на блочный режим для изображений */
-        text-align: center; /* Выравниваем изображения по центру */
-        margin: 20px 0; /* Добавляем отступы между изображениями и текстом */
+        display: block;
+        text-align: center;
+        margin: 20px 0;
     }
+
     .top {
-        height: auto; /* Устанавливаем высоту блока top на авто, чтобы текст мог поместиться */
-        background: none; /* Убираем фон у блока top */
-        line-height: normal; /* Восстанавливаем обычный line-height */
+        height: auto;
+        background: none;
+        line-height: normal;
     }
-   .mobile-links {
-        width: 100%; 
+
+    .mobile-links {
+        width: 100%;
         height: auto;
         text-align: center;
-        display: block; 
-    }
-   .mobile-links a {
         display: block;
-        margin: 10px 0; /* Добавляем отступы между ссылками */
+    }
+
+    .mobile-links a {
+        display: block;
+        margin: 10px 0;
     }
 }
-
 
 
  
